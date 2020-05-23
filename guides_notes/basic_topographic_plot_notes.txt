@@ -1,0 +1,14 @@
+gmt begin ../maps/titicaca png
+    gmt grdimage @earth_relief_01m -R-70.8/-17.17/-66.56/-14.42r -JM6i -C../cpts/mby.cpt
+    gmt coast -Scornflowerblue -Ir/0.7p,cornflowerblue -N1/0.7p,,-- -Bafg1 -B+t"Lago Titicaca"
+gmt end
+
+"gmt begin" file name (without extension) file type
+
+"gmt gridimage" filename or source (#earth_relief... calls up the standard file on the local gmt server) "r" after the coordinates means that its BL coords (lat/long) and TR coords; "-C"followed by the cpt file creates the color pallete
+
+"gmt coast" is the second command that is overlayed; doesn't required commands to be reentered
+"-Ir/0.7p,cornflowerblue" "-I" plots rivers; "r" is for permanenent rivers; standard pens after
+"-N1/0.7p,,--" is for plotting borders; "1" is for national borders, linecolor left blank for black default, "--" results in dashed line
+
+"gmt end"

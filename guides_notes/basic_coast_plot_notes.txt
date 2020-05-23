@@ -1,0 +1,28 @@
+gmt coast -R19.42/22.95/59.71/60.56 -W0.1p,black -Gdarkseagreen -Scornflowerblue -JM6i -Ba2f0.5g1 -BWSne+t"Archipelago Sea" -A0.1 -png ../maps/archi_sea
+
+
+"gmt coast" calls GMT and the coastline plot
+
+map range "-R"west border/east border/south border/north border
+
+"-W"linewidth,linecolor,linestyle
+"0.1p" indicates the line width
+"black" is the pen color
+there's no linestyle, no map defaults to straight unbroken line
+
+"-G" color for ground "-S" color for sea
+
+"-J" assigns a map projection ("M" is for mercator) "6i"is for map width (6 inches in this case)
+
+"-Ba2f0.5g1" "-B" sets map frame and associated elements
+"a2" annotation spacing; in this case 2 degrees on the frame
+"f0.5" the associated color change along the frame; half a degree in this case
+"g1" grid spacing; in this case 1 degree between hash marks
+
+"-BWSne+t"Archipelago Sea"" Sets the framing/title
+"WSne" there is a frame on the west, south, north, east side; annotations only on West and South (as indicated by capitalization)
+"+t"Archipelago Sea"" Adds title
+
+"-A0.1" doesn't include anything below this area (in sq km)
+
+"-png ../maps/archi_sea" Saves as a png; specifies the folder
