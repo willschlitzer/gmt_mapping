@@ -1,0 +1,5 @@
+gmt begin ../maps/south_china_sea png
+    gmt grdimage @earth_relief_01m -JM6i -R95/123/0/26 -Cgeo
+    gmt coast -W1/thinner -N1/thinner -Di -Bafg
+    gmt colorbar -DjRM+w3c -G-6725/3870 -Bx3000 -By+1m -F+gwhite@50
+gmt end
