@@ -1,0 +1,2 @@
+gmt coast -R19.42/22.95/59.71/60.56 -W0.1p,black -png ../maps/archi_sea
+
