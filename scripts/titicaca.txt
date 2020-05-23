@@ -1,5 +1,5 @@
 gmt begin ../maps/titicaca png
     gmt grdimage @earth_relief_01m -R-70.8/-17.17/-66.56/-14.42r -JM6i -C../cpts/mby.cpt
-    gmt coast -Scornflowerblue -Bafg1 -B+t"Lago Titicaca"
+    gmt coast -Scornflowerblue -Ir/0.7p,cornflowerblue -N1/0.7p,,-- -Bafg1 -B+t"Lago Titicaca"
 gmt end
 
