@@ -1,2 +1,0 @@
-map range "-R"west border/east border/south border/north border
-"-W"linewidth,linecolor,linestyle
