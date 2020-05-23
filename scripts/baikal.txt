@@ -1,0 +1,5 @@
+gmt begin ../maps/baikal png
+    gmt grdimage @earth_relief_01m -R103.15/50.99/110.80/56.48r -JM6i -C../cpts/mby.cpt
+    gmt coast -Scornflowerblue -Ir/0.7p,cornflowerblue -N1/0.7p,,-- -Bafg1 -B+t"Lake Baikal"
+gmt end
+
